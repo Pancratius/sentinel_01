@@ -1,0 +1,67 @@
+2020-11-26 22:39:42.012 INFO [FlowRuleManager] Flow rules loaded: {}
+2020-11-26 22:39:42.019 INFO App name resolved from default: com.pancras.Sentinel_01Application
+2020-11-26 22:39:42.020 INFO [SentinelConfig] Application type resolved: 0
+2020-11-26 22:39:42.042 INFO [MetricWriter] Creating new MetricWriter, singleFileSize=52428800, totalFileCount=6
+2020-11-26 22:39:42.075 INFO [DynamicSentinelProperty] Config will be updated to: [FlowRule{resource=HelloWorld, limitApp=default, grade=1, count=20.0, strategy=0, refResource=null, controlBehavior=0, warmUpPeriodSec=10, maxQueueingTimeMs=500, clusterMode=false, clusterConfig=null, controller=null}]
+2020-11-26 22:39:42.081 INFO [FlowRuleManager] Flow rules received: {HelloWorld=[FlowRule{resource=HelloWorld, limitApp=default, grade=1, count=20.0, strategy=0, refResource=null, controlBehavior=0, warmUpPeriodSec=10, maxQueueingTimeMs=500, clusterMode=false, clusterConfig=null, controller=com.alibaba.csp.sentinel.slots.block.flow.controller.DefaultController@694e1548}]}
+2020-11-26 22:39:42.092 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.metric.extension.MetricCallbackInit
+2020-11-26 22:39:42.100 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.metric.extension.MetricCallbackInit with order 2147483647
+2020-11-26 22:39:42.102 INFO Add child <sentinel_default_context> to node <machine-root>
+2020-11-26 22:39:42.106 INFO [SlotChainProvider] Global slot chain builder resolved: com.alibaba.csp.sentinel.slots.DefaultSlotChainBuilder
+2020-11-26 22:39:42.132 INFO Add child <HelloWorld> to node <sentinel_default_context>
+2020-11-26 22:39:42.134 INFO [AuthorityRuleManager] Load authority rules: {}
+2020-11-26 22:39:42.139 INFO [SystemRuleManager] Current system check status: false, highestSystemLoad: 1.797693e+308, highestCpuUsage: 1.797693e+308, maxRt: 9223372036854775807, maxThread: 9223372036854775807, maxQps: 1.797693e+308
+2020-11-26 22:39:42.143 INFO [DegradeRuleManager] Degrade rules loaded: {}
+2020-11-26 22:39:42.145 INFO [MetricExtensionProvider] No existing MetricExtension found
+2020-11-26 22:39:43.077 INFO [MetricWriter] New metric file created: C:\Users\Pancras\logs\csp\com-pancras-Sentinel_01Application-metrics.log.2020-11-26
+2020-11-26 22:39:43.078 INFO [MetricWriter] New metric index file created: C:\Users\Pancras\logs\csp\com-pancras-Sentinel_01Application-metrics.log.2020-11-26.idx
+2020-11-26 22:48:53.695 INFO App name resolved from property project.name: sentinel-dashboard
+2020-11-26 22:48:53.696 INFO [SentinelConfig] Application type resolved: 0
+2020-11-26 22:48:53.700 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.metric.extension.MetricCallbackInit
+2020-11-26 22:48:53.703 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.transport.init.CommandCenterInitFunc
+2020-11-26 22:48:53.712 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.transport.init.HeartbeatSenderInitFunc
+2020-11-26 22:48:53.713 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.init.ParamFlowStatisticSlotCallbackInit
+2020-11-26 22:48:53.718 INFO [SpiLoader] Found CommandCenter SPI: com.alibaba.csp.sentinel.transport.command.SimpleHttpCommandCenter with order 2147483647
+2020-11-26 22:48:53.719 INFO [CommandCenterProvider] CommandCenter resolved: com.alibaba.csp.sentinel.transport.command.SimpleHttpCommandCenter
+2020-11-26 22:48:53.739 INFO [CommandCenterInit] Starting command center: com.alibaba.csp.sentinel.transport.command.SimpleHttpCommandCenter
+2020-11-26 22:48:53.742 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.transport.init.CommandCenterInitFunc with order -1
+2020-11-26 22:48:53.758 INFO [SimpleHttpHeartbeatSender] Default console address list retrieved: [Tuple2{r1=localhost, r2=8080}]
+2020-11-26 22:48:53.758 INFO [SpiLoader] Found HeartbeatSender SPI: com.alibaba.csp.sentinel.transport.heartbeat.SimpleHttpHeartbeatSender with order 2147483647
+2020-11-26 22:48:53.759 INFO [HeartbeatSenderProvider] HeartbeatSender activated: com.alibaba.csp.sentinel.transport.heartbeat.SimpleHttpHeartbeatSender
+2020-11-26 22:48:53.760 INFO [HeartbeatSenderInit] Heartbeat interval not configured in config property or invalid, using sender default: 10000
+2020-11-26 22:48:53.761 INFO [HeartbeatSenderInit] HeartbeatSender started: com.alibaba.csp.sentinel.transport.heartbeat.SimpleHttpHeartbeatSender
+2020-11-26 22:48:53.762 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.transport.init.HeartbeatSenderInitFunc with order -1
+2020-11-26 22:48:53.764 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.metric.extension.MetricCallbackInit with order 2147483647
+2020-11-26 22:48:53.765 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.init.ParamFlowStatisticSlotCallbackInit with order 2147483647
+2020-11-26 22:48:58.875 INFO Add child <sentinel_default_context> to node <machine-root>
+2020-11-26 22:48:58.875 INFO Add child <sentinel_web_servlet_context> to node <machine-root>
+2020-11-26 22:48:58.881 INFO [SlotChainProvider] Global slot chain builder resolved: com.alibaba.csp.sentinel.slots.DefaultSlotChainBuilder
+2020-11-26 22:48:58.889 INFO Add child </registry/machine> to node <sentinel_web_servlet_context>
+2020-11-26 22:48:58.892 INFO [AuthorityRuleManager] Load authority rules: {}
+2020-11-26 22:48:58.895 INFO [SystemRuleManager] Current system check status: false, highestSystemLoad: 1.797693e+308, highestCpuUsage: 1.797693e+308, maxRt: 9223372036854775807, maxThread: 9223372036854775807, maxQps: 1.797693e+308
+2020-11-26 22:48:58.897 INFO [GatewayRuleManager] No gateway rules, clearing parameter metrics of previous rules
+2020-11-26 22:48:58.897 INFO [GatewayRuleManager] Gateway flow rules loaded: {}
+2020-11-26 22:48:58.899 INFO [ParamFlowRuleManager] No parameter flow rules, clearing all parameter metrics
+2020-11-26 22:48:58.899 INFO [ParamFlowRuleManager] Parameter flow rules received: {}
+2020-11-26 22:48:58.901 INFO [FlowRuleManager] Flow rules loaded: {}
+2020-11-26 22:48:58.904 INFO [MetricWriter] Creating new MetricWriter, singleFileSize=52428800, totalFileCount=6
+2020-11-26 22:48:58.908 INFO [DegradeRuleManager] Degrade rules loaded: {}
+2020-11-26 22:48:58.909 INFO [MetricExtensionProvider] No existing MetricExtension found
+2020-11-26 22:48:59.912 INFO [MetricWriter] New metric file created: C:\Users\Pancras\logs\csp\sentinel-dashboard-metrics.log.2020-11-26
+2020-11-26 22:48:59.913 INFO [MetricWriter] New metric index file created: C:\Users\Pancras\logs\csp\sentinel-dashboard-metrics.log.2020-11-26.idx
+2020-11-26 22:49:21.714 INFO Add child </> to node <sentinel_web_servlet_context>
+2020-11-26 22:49:22.203 INFO Add child </version> to node <sentinel_web_servlet_context>
+2020-11-26 22:49:22.266 INFO Add child </assets/img/sentinel-logo.png> to node <sentinel_web_servlet_context>
+2020-11-26 22:49:33.654 INFO Add child </auth/login> to node <sentinel_web_servlet_context>
+2020-11-26 22:49:33.688 INFO Add child </app/briefinfos.json> to node <sentinel_web_servlet_context>
+2020-11-26 22:49:36.011 INFO Add child </metric/queryTopResourceMetric.json> to node <sentinel_web_servlet_context>
+2020-11-26 22:49:44.384 INFO Add child </app/sentinel-dashboard/machines.json> to node <sentinel_web_servlet_context>
+2020-11-26 22:49:44.409 INFO Add child </resource/machineResource.json> to node <sentinel_web_servlet_context>
+2020-11-26 22:49:51.333 INFO Add child </v1/flow/rules> to node <sentinel_web_servlet_context>
+2020-11-26 22:49:53.106 INFO Add child </degrade/rules.json> to node <sentinel_web_servlet_context>
+2020-11-26 22:49:54.374 INFO Add child </paramFlow/rules> to node <sentinel_web_servlet_context>
+2020-11-26 22:49:55.045 INFO Add child </system/rules.json> to node <sentinel_web_servlet_context>
+2020-11-26 22:49:55.505 INFO Add child </authority/rules> to node <sentinel_web_servlet_context>
+2020-11-26 22:49:55.888 INFO Add child </cluster/server_state/sentinel-dashboard> to node <sentinel_web_servlet_context>
+2020-11-26 22:49:55.898 INFO [TokenClientProvider] No existing cluster token client, cluster client mode will not be activated
+2020-11-26 22:49:55.899 WARNING [EmbeddedClusterTokenServerProvider] No existing cluster token server, cluster server mode will not be activated

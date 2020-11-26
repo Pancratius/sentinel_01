@@ -1,0 +1,52 @@
+2020-11-26 22:53:28.185 INFO [FlowRuleManager] Flow rules loaded: {}
+2020-11-26 22:53:28.191 INFO App name resolved from default: com.pancras.Sentinel_01Application
+2020-11-26 22:53:28.191 INFO [SentinelConfig] Application type resolved: 1
+2020-11-26 22:53:28.215 INFO [MetricWriter] Creating new MetricWriter, singleFileSize=52428800, totalFileCount=6
+2020-11-26 22:53:28.250 INFO [DynamicSentinelProperty] Config will be updated to: [FlowRule{resource=HelloWorld, limitApp=default, grade=1, count=20.0, strategy=0, refResource=null, controlBehavior=0, warmUpPeriodSec=10, maxQueueingTimeMs=500, clusterMode=false, clusterConfig=null, controller=null}]
+2020-11-26 22:53:28.252 INFO [FlowRuleManager] Flow rules received: {HelloWorld=[FlowRule{resource=HelloWorld, limitApp=default, grade=1, count=20.0, strategy=0, refResource=null, controlBehavior=0, warmUpPeriodSec=10, maxQueueingTimeMs=500, clusterMode=false, clusterConfig=null, controller=com.alibaba.csp.sentinel.slots.block.flow.controller.DefaultController@51cdd8a}]}
+2020-11-26 22:53:28.266 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.metric.extension.MetricCallbackInit
+2020-11-26 22:53:28.270 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.transport.init.CommandCenterInitFunc
+2020-11-26 22:53:28.281 INFO [InitExecutor] Found init func: com.alibaba.csp.sentinel.transport.init.HeartbeatSenderInitFunc
+2020-11-26 22:53:28.288 INFO [SpiLoader] Found CommandCenter SPI: com.alibaba.csp.sentinel.transport.command.SimpleHttpCommandCenter with order 2147483647
+2020-11-26 22:53:28.289 INFO [CommandCenterProvider] CommandCenter resolved: com.alibaba.csp.sentinel.transport.command.SimpleHttpCommandCenter
+2020-11-26 22:53:28.310 INFO [CommandCenterInit] Starting command center: com.alibaba.csp.sentinel.transport.command.SimpleHttpCommandCenter
+2020-11-26 22:53:28.314 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.transport.init.CommandCenterInitFunc with order -1
+2020-11-26 22:53:28.319 WARNING Parse port of dashboard server failed: consoleIp:port
+java.lang.NumberFormatException: For input string: "port"
+	at java.lang.NumberFormatException.forInputString(NumberFormatException.java:65)
+	at java.lang.Integer.parseInt(Integer.java:580)
+	at java.lang.Integer.parseInt(Integer.java:615)
+	at com.alibaba.csp.sentinel.transport.config.TransportConfig.getConsoleServerList(TransportConfig.java:107)
+	at com.alibaba.csp.sentinel.transport.heartbeat.SimpleHttpHeartbeatSender.<init>(SimpleHttpHeartbeatSender.java:51)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at java.lang.Class.newInstance(Class.java:442)
+	at java.util.ServiceLoader$LazyIterator.nextService(ServiceLoader.java:380)
+	at java.util.ServiceLoader$LazyIterator.next(ServiceLoader.java:404)
+	at java.util.ServiceLoader$1.next(ServiceLoader.java:480)
+	at com.alibaba.csp.sentinel.util.SpiLoader.loadHighestPriorityInstance(SpiLoader.java:125)
+	at com.alibaba.csp.sentinel.heartbeat.HeartbeatSenderProvider.resolveInstance(HeartbeatSenderProvider.java:35)
+	at com.alibaba.csp.sentinel.heartbeat.HeartbeatSenderProvider.<clinit>(HeartbeatSenderProvider.java:31)
+	at com.alibaba.csp.sentinel.transport.init.HeartbeatSenderInitFunc.init(HeartbeatSenderInitFunc.java:52)
+	at com.alibaba.csp.sentinel.init.InitExecutor.doInit(InitExecutor.java:53)
+	at com.alibaba.csp.sentinel.Env.<clinit>(Env.java:36)
+	at com.alibaba.csp.sentinel.SphU.entry(SphU.java:85)
+	at com.pancras.Sentinel_01Application.main(Sentinel_01Application.java:22)
+2020-11-26 22:53:28.320 WARNING [SimpleHttpHeartbeatSender] Dashboard server address not configured or not available
+2020-11-26 22:53:28.321 INFO [SpiLoader] Found HeartbeatSender SPI: com.alibaba.csp.sentinel.transport.heartbeat.SimpleHttpHeartbeatSender with order 2147483647
+2020-11-26 22:53:28.321 INFO [HeartbeatSenderProvider] HeartbeatSender activated: com.alibaba.csp.sentinel.transport.heartbeat.SimpleHttpHeartbeatSender
+2020-11-26 22:53:28.321 INFO [HeartbeatSenderInit] Heartbeat interval not configured in config property or invalid, using sender default: 10000
+2020-11-26 22:53:28.322 INFO [HeartbeatSenderInit] HeartbeatSender started: com.alibaba.csp.sentinel.transport.heartbeat.SimpleHttpHeartbeatSender
+2020-11-26 22:53:28.323 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.transport.init.HeartbeatSenderInitFunc with order -1
+2020-11-26 22:53:28.324 INFO [InitExecutor] Executing com.alibaba.csp.sentinel.metric.extension.MetricCallbackInit with order 2147483647
+2020-11-26 22:53:28.326 INFO Add child <sentinel_default_context> to node <machine-root>
+2020-11-26 22:53:28.328 INFO [SlotChainProvider] Global slot chain builder resolved: com.alibaba.csp.sentinel.slots.DefaultSlotChainBuilder
+2020-11-26 22:53:28.339 INFO Add child <HelloWorld> to node <sentinel_default_context>
+2020-11-26 22:53:28.341 INFO [AuthorityRuleManager] Load authority rules: {}
+2020-11-26 22:53:28.344 INFO [SystemRuleManager] Current system check status: false, highestSystemLoad: 1.797693e+308, highestCpuUsage: 1.797693e+308, maxRt: 9223372036854775807, maxThread: 9223372036854775807, maxQps: 1.797693e+308
+2020-11-26 22:53:28.348 INFO [DegradeRuleManager] Degrade rules loaded: {}
+2020-11-26 22:53:28.350 INFO [MetricExtensionProvider] No existing MetricExtension found
+2020-11-26 22:53:29.258 INFO [MetricWriter] New metric file created: C:\Users\Pancras\logs\csp\com-pancras-Sentinel_01Application-metrics.log.2020-11-26.1
+2020-11-26 22:53:29.259 INFO [MetricWriter] New metric index file created: C:\Users\Pancras\logs\csp\com-pancras-Sentinel_01Application-metrics.log.2020-11-26.1.idx
